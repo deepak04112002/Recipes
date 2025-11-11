@@ -21,7 +21,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "test:coverage": "react-scripts test --coverage --watchAll=false"
+    "test:coverage": "react-scripts test --coverage --watchAll=false",
+    "docker:build": "docker build -t recipes-frontend .",
+    "docker:run": "docker run -p 3000:80 recipes-frontend"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.1.17",
