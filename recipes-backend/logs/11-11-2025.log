@@ -1,0 +1,121 @@
+2025-11-11 09:02:11.425 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-11-11 09:02:11.455 INFO  c.r.r.RecipesBackendApplication - Starting RecipesBackendApplication using Java 25 with PID 88757 (/Users/deepakmajhi/Documents/Recipes/recipes-backend/target/classes started by deepakmajhi in /Users/deepakmajhi/Documents/Recipes/recipes-backend)
+2025-11-11 09:02:11.456 INFO  c.r.r.RecipesBackendApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-11 09:02:12.034 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-11 09:02:12.120 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 80 ms. Found 1 JPA repository interface.
+2025-11-11 09:02:12.282 INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=146cbafd-58c8-32ee-b52f-81d2f81e1f69
+2025-11-11 09:02:12.776 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-11-11 09:02:12.785 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-11-11 09:02:12.787 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-11 09:02:12.787 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-11 09:02:12.826 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-11 09:02:12.826 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1335 ms
+2025-11-11 09:02:13.024 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-11 09:02:13.091 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.33.Final
+2025-11-11 09:02:13.124 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-11-11 09:02:13.347 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-11 09:02:13.365 INFO  com.zaxxer.hikari.HikariDataSource - RecipeHikariPool - Starting...
+2025-11-11 09:02:13.507 INFO  com.zaxxer.hikari.pool.HikariPool - RecipeHikariPool - Added connection conn0: url=jdbc:h2:mem:recipedb user=SA
+2025-11-11 09:02:13.509 INFO  com.zaxxer.hikari.HikariDataSource - RecipeHikariPool - Start completed.
+2025-11-11 09:02:13.559 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (RecipeHikariPool)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-11 09:02:13.694 INFO  o.h.s.m.o.b.i.HibernateSearchPreIntegrationService - HSEARCH000034: Hibernate Search version 7.0.0.Final
+2025-11-11 09:02:14.187 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-11 09:02:14.225 INFO  o.h.s.e.c.s.ConfigurationPropertyChecker - HSEARCH000567: Configuration property tracking is disabled; unused properties will not be logged.
+2025-11-11 09:02:14.521 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-11 09:02:15.531 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:recipedb'
+2025-11-11 09:02:15.710 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-11-11 09:02:15.736 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-11-11 09:02:15.738 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-11 09:02:15.749 INFO  com.zaxxer.hikari.HikariDataSource - RecipeHikariPool - Shutdown initiated...
+2025-11-11 09:02:15.750 INFO  com.zaxxer.hikari.HikariDataSource - RecipeHikariPool - Shutdown completed.
+2025-11-11 09:02:15.761 INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-11-11 09:02:15.772 ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2025-11-11 09:03:45.144 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-11-11 09:03:45.178 INFO  c.r.r.RecipesBackendApplication - Starting RecipesBackendApplication using Java 25 with PID 89059 (/Users/deepakmajhi/Documents/Recipes/recipes-backend/target/classes started by deepakmajhi in /Users/deepakmajhi/Documents/Recipes/recipes-backend)
+2025-11-11 09:03:45.179 INFO  c.r.r.RecipesBackendApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-11 09:03:45.846 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-11 09:03:45.947 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 92 ms. Found 1 JPA repository interface.
+2025-11-11 09:03:46.107 INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=146cbafd-58c8-32ee-b52f-81d2f81e1f69
+2025-11-11 09:03:46.555 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-11-11 09:03:46.563 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-11-11 09:03:46.564 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-11 09:03:46.564 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-11 09:03:46.599 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-11 09:03:46.600 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1387 ms
+2025-11-11 09:03:46.750 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-11 09:03:46.913 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.33.Final
+2025-11-11 09:03:46.987 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-11-11 09:03:47.203 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-11 09:03:47.228 INFO  com.zaxxer.hikari.HikariDataSource - RecipeHikariPool - Starting...
+2025-11-11 09:03:47.555 INFO  com.zaxxer.hikari.pool.HikariPool - RecipeHikariPool - Added connection conn0: url=jdbc:h2:mem:recipedb user=SA
+2025-11-11 09:03:47.560 INFO  com.zaxxer.hikari.HikariDataSource - RecipeHikariPool - Start completed.
+2025-11-11 09:03:47.607 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (RecipeHikariPool)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-11 09:03:47.831 INFO  o.h.s.m.o.b.i.HibernateSearchPreIntegrationService - HSEARCH000034: Hibernate Search version 7.0.0.Final
+2025-11-11 09:03:48.335 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-11 09:03:48.377 INFO  o.h.s.e.c.s.ConfigurationPropertyChecker - HSEARCH000567: Configuration property tracking is disabled; unused properties will not be logged.
+2025-11-11 09:03:49.295 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-11 09:03:52.949 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:recipedb'
+2025-11-11 09:03:54.073 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-11-11 09:03:54.166 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-11-11 09:03:54.239 INFO  c.r.r.RecipesBackendApplication - Started RecipesBackendApplication in 9.365 seconds (process running for 10.909)
+2025-11-11 09:04:02.697 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-11 09:04:02.699 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-11-11 09:04:02.746 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 45 ms
+2025-11-11 09:04:03.223 INFO  c.r.r.controller.RecipeController - Entered loadRecipes controller
+2025-11-11 09:04:03.544 INFO  c.r.r.service.RecipeService - Starting to load recipes from external API
+2025-11-11 09:04:04.656 INFO  c.r.r.service.ExternalRecipeClient - Fetching recipes from external API: https://dummyjson.com/recipes
+2025-11-11 09:04:05.155 ERROR i.n.r.d.DnsServerAddressStreamProviders - Unable to load io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'. Use DEBUG level to see the full stack: java.lang.UnsatisfiedLinkError: failed to load the required native library
+2025-11-11 09:04:05.638 INFO  c.r.r.controller.RecipeController - Entered getAllRecipes controller
+2025-11-11 09:04:05.645 INFO  c.r.r.service.RecipeService - Finding all recipes
+2025-11-11 09:04:12.161 INFO  c.r.r.controller.RecipeController - Entered loadRecipes controller
+2025-11-11 09:04:12.174 INFO  c.r.r.service.RecipeService - Starting to load recipes from external API
+2025-11-11 09:04:12.202 INFO  c.r.r.service.ExternalRecipeClient - Fetching recipes from external API: https://dummyjson.com/recipes
+2025-11-11 09:04:12.229 INFO  c.r.r.controller.RecipeController - Entered getAllRecipes controller
+2025-11-11 09:04:12.229 INFO  c.r.r.service.RecipeService - Finding all recipes
+2025-11-11 09:04:12.876 INFO  c.r.r.service.ExternalRecipeClient - Successfully fetched 30 recipes
+2025-11-11 09:04:13.259 INFO  c.r.r.service.ExternalRecipeClient - Successfully fetched 30 recipes
+2025-11-11 09:04:13.666 INFO  o.h.s.m.p.m.i.PojoMassIndexingLoggingMonitor - HSEARCH000027: Mass indexing is going to index 60 entities.
+2025-11-11 09:04:13.667 INFO  o.h.s.m.p.m.i.PojoMassIndexingLoggingMonitor - HSEARCH000027: Mass indexing is going to index 60 entities.
+2025-11-11 09:04:13.852 INFO  o.h.s.m.p.m.i.PojoMassIndexingLoggingMonitor - HSEARCH000030: Mass indexing progress: indexed 50 entities in 15 ms.
+2025-11-11 09:04:13.860 INFO  o.h.s.m.p.m.i.PojoMassIndexingLoggingMonitor - HSEARCH000031: Mass indexing progress: 83.33%. Mass indexing speed: 0.000238 documents/second since last message, 3283.847656 documents/second since start.
+2025-11-11 09:04:13.852 INFO  o.h.s.m.p.m.i.PojoMassIndexingLoggingMonitor - HSEARCH000030: Mass indexing progress: indexed 50 entities in 15 ms.
+2025-11-11 09:04:13.860 INFO  o.h.s.m.p.m.i.PojoMassIndexingLoggingMonitor - HSEARCH000031: Mass indexing progress: 83.33%. Mass indexing speed: 0.000238 documents/second since last message, 3173.889404 documents/second since start.
+2025-11-11 09:04:13.968 INFO  o.h.s.m.p.m.i.PojoMassIndexingLoggingMonitor - HSEARCH000028: Mass indexing complete. Indexed 60 entities.
+2025-11-11 09:04:13.968 INFO  o.h.s.m.p.m.i.PojoMassIndexingLoggingMonitor - HSEARCH000028: Mass indexing complete. Indexed 60 entities.
+2025-11-11 09:04:13.968 INFO  c.r.r.service.RecipeService - Successfully loaded 30 recipes
+2025-11-11 09:04:13.968 INFO  c.r.r.service.RecipeService - Successfully loaded 30 recipes
+2025-11-11 09:04:20.600 INFO  c.r.r.controller.RecipeController - Entered loadRecipes controller
+2025-11-11 09:04:20.608 INFO  c.r.r.service.RecipeService - Starting to load recipes from external API
+2025-11-11 09:04:20.621 INFO  c.r.r.service.RecipeService - Recipes already loaded, skipping
+2025-11-11 09:04:20.637 INFO  c.r.r.controller.RecipeController - Entered getAllRecipes controller
+2025-11-11 09:04:20.637 INFO  c.r.r.service.RecipeService - Finding all recipes
+2025-11-11 09:04:24.447 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete

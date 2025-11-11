@@ -7,5 +7,3 @@ services:
     image: deepak04112002/recipes-frontend:latest
     ports:
       - "3000:80"
-    environment:
-      - REACT_APP_API_BASE_URL=https://recipes-backend-latest.onrender.com/api
