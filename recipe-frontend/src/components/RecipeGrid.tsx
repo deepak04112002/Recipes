@@ -28,12 +28,10 @@ export const RecipeGrid: React.FC<RecipeGridProps> = ({
       const aValue = a[filters.sortBy];
       const bValue = b[filters.sortBy];
 
-      // Handle null/undefined values
       if (aValue == null && bValue == null) return 0;
       if (aValue == null) return 1;
       if (bValue == null) return -1;
 
-      // Handle string comparison
       if (typeof aValue === "string" && typeof bValue === "string") {
         const comparison = aValue
           .toLowerCase()
@@ -41,7 +39,6 @@ export const RecipeGrid: React.FC<RecipeGridProps> = ({
         return filters.sortOrder === "asc" ? comparison : -comparison;
       }
 
-      // Handle numeric comparison
       if (typeof aValue === "number" && typeof bValue === "number") {
         const comparison = aValue - bValue;
         return filters.sortOrder === "asc" ? comparison : -comparison;
@@ -59,6 +56,7 @@ export const RecipeGrid: React.FC<RecipeGridProps> = ({
         {Array.from({ length: 8 }).map((_, index) => (
           <div
             key={index}
+            data-testid="loading-card"
             className="bg-white rounded-lg shadow-md p-4 animate-pulse"
           >
             <div className="w-full h-48 bg-gray-300 rounded-lg mb-4"></div>

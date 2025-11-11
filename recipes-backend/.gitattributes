@@ -41,3 +41,6 @@ Thumbs.db
 
 # Application specific
 application-local.properties
+
+# Lucene indexes
+lucene-indexes/

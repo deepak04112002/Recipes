@@ -34,7 +34,24 @@
   "jest": {
     "transformIgnorePatterns": [
       "node_modules/(?!(axios)/)"
-    ]
+    ],
+    "collectCoverageFrom": [
+      "src/**/*.{ts,tsx}",
+      "!src/index.tsx",
+      "!src/reportWebVitals.ts",
+      "!src/react-app-env.d.ts",
+      "!src/setupTests.ts",
+      "!src/types/**",
+      "!src/services/**"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 70,
+        "functions": 80,
+        "lines": 85,
+        "statements": 84
+      }
+    }
   },
   "browserslist": {
     "production": [
