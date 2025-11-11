@@ -40,4 +40,4 @@ Thumbs.db
 .dockerignore
 
 # Application specific
-application.properties
+application-local.properties
