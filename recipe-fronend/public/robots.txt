@@ -1,0 +1,8 @@
+# Recipe Finder - robots.txt
+User-agent: *
+Allow: /
+
+# Allow search engines to crawl all content
+Disallow: /private/
+Disallow: /admin/
+
