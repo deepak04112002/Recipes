@@ -21,6 +21,7 @@ jobs:
           distribution: 'temurin'
 
       - name: Build with Maven
+        working-directory: ./recipes-backend
         run: mvn clean package -DskipTests
 
       - name: Login to Docker Hub
@@ -32,7 +33,7 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
         with:
-          context: .
+          context: ./recipes-backend
           platforms: linux/amd64
           push: true
           tags: deepak04112002/recipes-backend:latest
